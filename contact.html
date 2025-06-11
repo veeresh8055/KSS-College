@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - KSS College</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8fafc;
+    }
+    .card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+  </style>
+
+  <script>
+    (function(){
+      emailjs.init("ZOcms8Q3ZEQ3DQQAK"); // Your Public Key
+    })();
+
+    function sendMail(event) {
+      event.preventDefault();
+
+      emailjs.sendForm("service_4veu14x", "template_2ye8zc1", document.getElementById("contactForm"))
+        .then(function(response) {
+          alert("Message Sent Successfully!");
+          document.getElementById("contactForm").reset();
+        }, function(error) {
+          alert("FAILED: " + error);
+        });
+    }
+  </script>
+</head>
+<body class="text-gray-800">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-xl font-bold tracking-wide">KSS COLLEGE</h1>
+      <nav class="space-x-6 text-sm font-semibold">
+        <a href="index.html" class="hover:text-blue-600">Home</a>
+        <a href="about.html" class="hover:text-blue-600">About</a>
+        <a href="admission.html" class="hover:text-blue-600">Admissions</a>
+        <a href="departments.html" class="hover:text-blue-600">Departments</a>
+        <a href="courses.html" class="hover:text-blue-600">Courses</a>
+        <a href="contact.html" class="text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="pt-32 pb-16 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center">
+    <h2 class="text-4xl font-bold mb-4">Contact Us</h2>
+    <p class="max-w-2xl mx-auto">We are here to help you! Reach out to us for any queries or information regarding admissions, departments, or any other assistance.</p>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div class="bg-white p-8 rounded-lg shadow card">
+        <h3 class="text-2xl font-bold mb-6 text-blue-600">Send Us a Message</h3>
+        <form id="contactForm" onsubmit="sendMail(event)">
+          <div class="mb-4">
+            <label class="block mb-2 font-semibold">Full Name</label>
+            <input type="text" name="from_name" required class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-blue-400" placeholder="Your Name">
+          </div>
+          <div class="mb-4">
+            <label class="block mb-2 font-semibold">Email Address</label>
+            <input type="email" name="reply_to" required class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-blue-400" placeholder="Your Email">
+          </div>
+          <div class="mb-4">
+            <label class="block mb-2 font-semibold">Message</label>
+            <textarea rows="5" name="message" required class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-blue-400" placeholder="Write your message here..."></textarea>
+          </div>
+          <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded font-semibold hover:bg-blue-700">Submit</button>
+        </form>
+      </div>
+
+      <div class="bg-white p-8 rounded-lg shadow card">
+        <h3 class="text-2xl font-bold mb-6 text-blue-600">Our Contact Information</h3>
+        <div class="space-y-4">
+          <p><strong>Address:</strong> KSS College, Gadag, Karnataka, India</p>
+          <p><strong>Phone:</strong> +91 9482931100</p>
+          <p><strong>Email:</strong> principalksscollegegadag@gmail.com</p>
+          <p><strong>Office Hours:</strong> Mon - Fri, 9:00 AM - 5:00 PM</p>
+          <div class="mt-6">
+            <h4 class="font-semibold mb-2">Follow Us:</h4>
+            <div class="flex space-x-4">
+              <a href="https://instagram.com" target="_blank" class="hover:text-pink-500">Instagram</a>
+              <a href="https://twitter.com" target="_blank" class="hover:text-blue-400">Twitter</a>
+              <a href="https://facebook.com" target="_blank" class="hover:text-blue-600">Facebook</a>
+              <a href="https://github.com" target="_blank" class="hover:text-gray-400">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-10">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="text-lg font-semibold mb-3">KSS College</h4>
+        <p class="text-sm text-gray-300">Empowering students with knowledge, discipline, and innovation since 1984. Located in Gadag, Karnataka.</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-3">Quick Links</h4>
+        <ul class="text-sm space-y-2">
+          <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+          <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
+          <li><a href="admission.html" class="hover:text-yellow-400">Admissions</a></li>
+          <li><a href="departments.html" class="hover:text-yellow-400">Departments</a></li>
+          <li><a href="courses.html" class="hover:text-yellow-400">Courses</a></li>
+          <li><a href="contact.html" class="hover:text-yellow-400">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-3">Follow Us</h4>
+        <div class="flex space-x-4">
+          <a href="https://instagram.com" target="_blank" class="hover:text-pink-500">Instagram</a>
+          <a href="https://twitter.com" target="_blank" class="hover:text-blue-400">Twitter</a>
+          <a href="https://facebook.com" target="_blank" class="hover:text-blue-600">Facebook</a>
+          <a href="https://github.com" target="_blank" class="hover:text-gray-400">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-8 text-sm text-gray-400">&copy; 2025 KSS College. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>

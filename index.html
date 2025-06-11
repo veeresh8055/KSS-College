@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KSS College Modern Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-gray-800">
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <h1 class="text-xl font-bold tracking-wide">KSS COLLEGE</h1>
+        <nav class="space-x-6 text-sm font-semibold">
+          <a href="about.html" class="hover:text-blue-600">About</a>
+          <a href="admission.html" class="hover:text-blue-600">Admissions</a>
+          <a href="departments.html" class="hover:text-blue-600">Departments</a>
+          <a href="gallery.html" class="hover:text-blue-600">Photo Gallery</a>
+          <a href="courses.html" class="hover:text-blue-600">Courses</a>
+          <a href="contact.html" class="hover:text-blue-600">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section
+      class="relative h-screen bg-cover bg-center"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d');
+      "
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center"
+      >
+        <div class="text-center text-white px-4">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">
+            Creative Thinking & Innovation
+          </h2>
+          <p class="text-lg max-w-2xl mx-auto mb-6">
+            Utilize open-source users for process-centric linkage. Reinvent
+            web-enabled initiatives with premium processes.
+          </p>
+          <div class="flex justify-center space-x-4">
+            <button
+              class="bg-yellow-400 text-black font-semibold px-5 py-2 rounded hover:bg-yellow-300"
+            >
+              See Programs
+            </button>
+            <button
+              class="border border-white px-5 py-2 rounded hover:bg-white hover:text-black"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="py-16 bg-white text-center">
+      <h3 class="text-3xl font-bold mb-4">Welcome</h3>
+      <p class="max-w-xl mx-auto text-gray-600">
+        KANAKADAS SHIKSHANA SAMITI'S Arts, Commerce, Science College,& PG Centre
+        Gadag is a pioneer institution in Gadag District. Established in 1984.It
+        is named after the Great Saint , Popular Poet, Soulful Singer, Devotee
+        of Udupi Krishna and above all Universal Philosopher called
+        KANAKADAS.Our college is a premier institution in and across the Gadag
+        district. Students from Koppal,Raichur,Haveri,Dharwad & Davanagere
+        District pursue study in our college.
+      </p>
+      <p class="mt-4 italic">— Dr. B.F.Dandin</p>
+    </section>
+
+    <!-- College About Section -->
+    <section class="py-16 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-6 md:flex md:items-center md:gap-12">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <img
+            src="https://ksscollegegadag.edu.in/wp-content/uploads/2021/04/VTECH-CODERS-DHARWAD-HUBALI-KSS-COLLEGE-GADAG.jpg"
+            alt="KSS College"
+            class="rounded-lg shadow-lg"
+          />
+        </div>
+        <div class="md:w-1/2">
+          <h3 class="text-3xl font-bold mb-4">About Our College</h3>
+          <p class="text-gray-700 leading-relaxed">
+            KSS College has been a center of academic excellence and a symbol of
+            knowledge and progress in Karnataka. With modern infrastructure,
+            experienced faculty, and a wide range of academic programs, the
+            college continues to inspire thousands of students each year. We
+            strive to foster creativity, discipline, and innovation through a
+            well-rounded educational approach that prepares our students for the
+            challenges of tomorrow.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-12">Meet Our Team</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <div
+            class="group bg-gray-100 p-4 rounded-lg shadow hover:shadow-lg transition duration-300"
+          >
+            <img
+              src="https://ksscollegegadag.edu.in/wp-content/uploads/2021/04/manju-400x400.png"
+              class="rounded-full mx-auto mb-4 group-hover:scale-110 transition-transform duration-300"
+              alt="Team member"
+            />
+            <h4 class="text-center text-lg font-semibold">Dr. Sahana Rao</h4>
+            <p class="text-center text-gray-600 text-sm">
+              Principal, Visionary Leader with 20+ years of experience.
+            </p>
+          </div>
+          <div
+            class="group bg-gray-100 p-4 rounded-lg shadow hover:shadow-lg transition duration-300"
+          >
+            <img
+              src="https://ksscollegegadag.edu.in/wp-content/uploads/2021/04/rAVI-b-DANDIN-400x359.png"
+              class="rounded-full mx-auto mb-4 group-hover:scale-110 transition-transform duration-300"
+              alt="Team member"
+            />
+            <h4 class="text-center text-lg font-semibold">
+              Prof. Amit Kulkarni
+            </h4>
+            <p class="text-center text-gray-600 text-sm">
+              Head of Department, Computer Science and Tech Enthusiast.
+            </p>
+          </div>
+          <div
+            class="group bg-gray-100 p-4 rounded-lg shadow hover:shadow-lg transition duration-300"
+          >
+            <img
+              src="https://ksscollegegadag.edu.in/wp-content/uploads/2021/04/WhatsApp_Image_2021-07-19_at_12.04.06_PM-removebg-preview-400x359.png"
+              class="rounded-full mx-auto mb-4 group-hover:scale-110 transition-transform duration-300"
+              alt="Team member"
+            />
+            <h4 class="text-center text-lg font-semibold">Dr. Neha Patil</h4>
+            <p class="text-center text-gray-600 text-sm">
+              Research Scholar and Science Communicator.
+            </p>
+          </div>
+          <div
+            class="group bg-gray-100 p-4 rounded-lg shadow hover:shadow-lg transition duration-300"
+          >
+            <img
+              src="https://ksscollegegadag.edu.in/wp-content/uploads/2021/04/d.b.gavanisir-400x400.jpeg"
+              class="rounded-full mx-auto mb-4 group-hover:scale-110 transition-transform duration-300"
+              alt="Team member"
+            />
+            <h4 class="text-center text-lg font-semibold">Mr. Ravi Desai</h4>
+            <p class="text-center text-gray-600 text-sm">
+              Coordinator and Academic Advisor with a passion for growth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h4 class="text-lg font-semibold mb-3">KSS College</h4>
+          <p class="text-sm text-gray-300">
+            Empowering students with knowledge, discipline, and innovation since
+            1984. Located in Gadag, Karnataka.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-3">Quick Links</h4>
+          <ul class="text-sm space-y-2">
+            <li>
+              <a href="about.html" class="hover:text-yellow-400">About</a>
+            </li>
+            <li>
+              <a href="admission.html" class="hover:text-yellow-400"
+                >Admissions</a
+              >
+            </li>
+            <li>
+              <a href="departments.html" class="hover:text-yellow-400"
+                >Departments</a
+              >
+            </li>
+            <li>
+              <a href="courses.html" class="hover:text-yellow-400">Courses</a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-3">Follow Us</h4>
+          <div class="flex space-x-4">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              class="hover:text-pink-500"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              class="hover:text-blue-400"
+              ><i class="fab fa-twitter"></i> Twitter</a
+            >
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              class="hover:text-blue-600"
+              ><i class="fab fa-facebook"></i> Facebook</a
+            >
+            <a
+              href="https://github.com"
+              target="_blank"
+              class="hover:text-gray-400"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-8 text-sm text-gray-400">
+        &copy; 2025 KSS College. All rights reserved.
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // GSAP animations
+      gsap.from("header", {
+        y: -100,
+        duration: 1,
+        ease: "ease",
+      });
+
+      gsap.from(".hero-content", {
+        opacity: 0,
+        y: 50,
+        delay: 0.5,
+        duration: 1,
+      });
+
+      gsap.utils.toArray(".hover\\:scale-105").forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+          gsap.to(el, { scale: 1.05, duration: 0.3 });
+        });
+        el.addEventListener("mouseleave", () => {
+          gsap.to(el, { scale: 1, duration: 0.3 });
+        });
+      });
+    </script>
+  </body>
+</html>
